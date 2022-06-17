@@ -1,0 +1,125 @@
+/* --- POSITIONNEMENT --- */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Page */
+html,
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+body {
+	background: #0cf;
+}
+#global {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+table tr {
+	height: 30px;
+}
+table tr td {
+	min-width: 100px;
+}
+
+/* En-t�te */
+#entete {
+	padding: 20px 20px 20px 0;
+	background: #777;
+}
+
+/* Bloc centre  contenant #navigation et #contenu */
+#centre {
+	width: 100%;
+	height: 100%;
+	background: #999;
+}
+
+/* Menu de navigation */
+#navigation {
+	float: left;
+	min-width: 140px;
+	background: #ccc;
+}
+#navigation ul {
+	padding: 20px 10px 20px 10px;
+	list-style: none;
+}
+#navigation a {
+	display: block;
+	padding: 6px 10px 6px 10px;
+	text-decoration: none;
+}
+#navigation a:hover,
+#navigation a:focus {
+	color: #fff;
+	background: #333;
+}
+
+/* Contenu */
+#contenu {
+	width: 100%;
+	padding: 10px 200px;
+	min-height: 100%;
+	margin-bottom: 40px;
+	color: #000;
+	background: #cbd888;
+}
+
+/* Pied de page */
+#pied {
+	position: sticky;
+	top: 100vh;
+	padding: 15px 20px 10px 0;
+	background: #777;
+	z-index: 150;
+	width: 100%;
+}
+
+/* --- NOTES ---
+Les �l�ments flottants ne repoussent pas les blocs, mais repoussent
+uniquement leur contenu. Pour que notre bloc de contenu principal forme
+une colonne distincte du menu, on lui donne donc une marge � gauche de
+200px
+*/
+
+hr {
+	margin: 0 5px;
+	border: solid 1px darkgray;
+}
+.vignette {
+	margin: 5px;
+	height: 120px;
+}
+h1 {
+	text-align: center;
+	font-size: larger;
+}
+h3 {
+	text-align: center;
+	font-size: large;
+}
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	width: 20%;
+}
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	text-align: center;
+}
+nav ul li a:hover {
+	background-color: gray;
+}
+.err {
+	color: red;
+	font-style: italic;
+	margin-left: 5px;
+}
